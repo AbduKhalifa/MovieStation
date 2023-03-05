@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <!-- Links -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css-libs/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css-libs/bootstrap.min.css">
+
+    <!-- Google Fonts Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Courgette&family=Playfair+Display:wght@500&family=Quicksand:wght@500&family=Roboto+Mono:wght@200&family=Rubik+Glitch&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate CSS with wow-js-->
+    <link rel="stylesheet" href="./animate.css/animate.css">
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+
+    <!-- My CSS Files-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Music Section -->
+
+    <div class="music music-play d-none d-flex justify-content-center align-items-center">
+        <div class="play">
+            <i class="fa-sharp fa-solid fa-play"></i>
+        </div>
+    </div>
+    <div class="music music-pause  d-flex justify-content-center align-items-center">
+        <div class="pause">
+            <i class="fa-sharp fa-solid fa-pause"></i>
+        </div>
+    </div>
+    <audio id="start-music" autoplay src="./audio/2019-05-01_-_Undercover_Spy_Agent_-_David_Fesliyan.mp3"></audio>
+
+    <!-- End Music Section -->
+
+    <!-- Start Warning Part -->
+    <div id="warning" class="d-flex align-items-center ">
+        <p class="me-3"></p>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>
+    <!-- End Warning Part -->
+
+
+
+    <!-- Intro Section -->
+    <header class="intro">
+        <div class="container-fluid">
+            <div class="container px-sm-2 px-0">
+                <h1 class="title">
+                    MovieStation
+                </h1>
+                <span class="start"></span>
+                <span class="start"></span>
+                <span class="start"></span>
+                <span class="start"></span>
+                <span class="start"></span>
+
+                <div class="intro-body text-center">
+                    <p class="qoute">Your place for movies</p>
+                    <h1 class="">MovieStation</h1>
+                    <div class="parent d-flex justify-content-center pt-3">
+                        <div class="item mx-md-3 wow animate__jackInTheBox" data-wow-duration="3s">
+                            <a href=""><img src="./imgs/genres/anime.png" alt=""></a>
+                        </div>
+                        <div class="item mx-md-3 pt-5 wow animate__jackInTheBox" data-wow-duration="4s">
+                            <a href=""><img src="./imgs/genres/movie.png" alt=""></a>
+                        </div>
+                        <div class="item mx-md-3 wow animate__jackInTheBox" data-wow-duration="5s">
+                            <a href=""><img src="./imgs/genres/series.png" alt=""></a>
+                        </div>
+                        <div class="item mx-md-3 pt-5 wow animate__jackInTheBox" data-wow-duration="6s">
+                            <a href=""><img src="./imgs/genres/disney.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- End Intro Section -->
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="container-md">
+                <div class="row introduce">
+                    <div class="col-lg-6 mb-4">
+                        <div class="speech py-4">
+                            <h2>Welcome</h2>
+                            <p class="">We are a website that tries to collect movies and series of all kinds as
+                                possible so that
+                                you can find them whenever you want easily. We wish you an enjoyable tour</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="showTrends">
+                        <div class="film">
+                            <h2>Game Of Thrones</h2>
+                            <p> a mind needs books as a sword needs a whetstone, if it is to keep its edge.</p>
+                            <div class="images pt-sm-3 ">
+                                <div class="item">
+                                    <img src="./imgs/trends/gofTrones/gameOfThrones1.jpg" alt="">
+                                    <img src="./imgs/trends/gofTrones/gameOfThrones2.jpg" alt="">
+                                    <img src="./imgs/trends/gofTrones/gameOfThrones3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film">
+                            <h2>Attack On Titan</h2>
+                            <p> a mind needs books as a sword needs a whetstone, if it is to keep its edge.</p>
+                            <div class="images pt-sm-3 ">
+                                <div class="item">
+                                    <img src="./imgs/trends/AttackOnTitan/attack1.png" alt="">
+                                    <img src="./imgs/trends/AttackOnTitan/attack2.jpg" alt="">
+                                    <img src="./imgs/trends/AttackOnTitan/attack3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end-content">
+
+    </div>
+    <!-- End Content Section -->
+
+    <!-- Start Search Part -->
+    <section class="search-part">
+        <div class="container-fluid">
+            <div class="">
+                <form action="" class=" d-flex align-items-center">
+                    <input type="text" class="flex-grow-1 me-sm-3 me-1" name="valueSeacrh" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Search Part -->
+
+    <!-- Start Section Films -->
+
+    <section class="films ">
+        <div class="container-fluid px-0">
+            <div class="container">
+                <div class="row big-row">
+                    <div class="col-12 img-left main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/manifest.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>manifest</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                        assumenda, a culpa ex
+                                        quos.
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/manifest1.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/manifest2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/manifest3.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/manifest4.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/manifest5.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 img-right main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/brbad.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>Breaking Bad</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                        assumenda, a culpa ex
+                                        quos consequuntur eligendi expedita deleniti perferendis molestiae. Lorem ipsum
+                                        dolor sit amet.
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/brbad.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/brbad2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/brbad3.png" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/brbad4.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row big-row">
+                    <div class="col-12 img-left main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/deathNote.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>Death Note</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/dn1.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/dn2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/dn3.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/dn.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 img-right main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/suits.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>Suits</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                        assumenda, a culpa ex
+                                        quos consequuntur eligendi expedita deleniti perferendis molestiae Lorem ipsum
+                                        dolor sit amet consectetur adipisicing elit. Ipsam, obcaecati.
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/suits.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits3.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits4.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits5.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits6.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/suits7.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row big-row">
+                    <div class="col-12 img-left main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/mr-robot.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>Mr Robot</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                        assumenda, a culpa ex
+                                        quos consequuntur eligendi expedita deleniti perferendis molestiae.
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/robot1.jfif" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/robot2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/robot3.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 img-right main mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 align-items-center d-flex wow wow animate__slideInRight"
+                                data-wow-duration="1s">
+                                <div class="package-film">
+                                    <div class="head">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="./imgs/films/dark.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-items-center d-flex wow animate__slideInLeft"
+                                data-wow-duration="1s">
+                                <div class="data-film mt-sm-4 mx-sm-5">
+                                    <h2>Dark</h2>
+                                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                                        assumenda, a culpa ex
+                                        quos consequuntur eligendi expedita deleniti perferendis molestiae. lorem
+                                        pnoandsaf
+                                    </p>
+                                    <div class="actors">
+                                        <p class="">prominent actors</p>
+                                        <div class="imgs d-flex flex-wrap">
+                                            <img src="./imgs/Actors/dark.jfif" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/dark2.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                            <img src="./imgs/Actors/dark3.jpg" alt="" data-wow-duration="3s"
+                                                class="wow animate__zoomIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Section Films -->
+
+    <!-- Style Section -->
+    <section class="dont-breath">
+        <span>Don't Breathe</span>
+    </section>
+    <!-- End Style Section -->
+
+    <!-- Me Section -->
+    <section class="me">
+        <div class="container-fluid">
+            <div class="container" id="introduce-me">
+                <h4 ></h4>
+                <p >
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End Me Section -->
+
+    <!-- Start Contact Us Section -->
+    <section class="contact-us">
+        <div class="container-fluid">
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us Section -->
+
+    <!-- Start Footer -->
+
+    <!-- Scripts -->
+
+    <!-- Bootstrap Script-->
+    <script src="./js-libs/bootstrap.bundle.min.js"></script>
+
+    <!-- Wowjs Plugin Script-->
+    <script src="./wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- JQuery Script -->
+    <script src="./js-libs/jQuery.js"></script>
+    <script src="./js/jQ.js"></script>
+    <!-- slick slider script -->
+    <script src="./slick/slick.min.js"></script>
+
+    <!-- Typedjs Script -->
+    <script src="./typed.js/src/typed.js" type="module"></script>
+
+
+    <!-- My Script-->
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
